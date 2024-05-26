@@ -1,0 +1,14 @@
+name: ShieldDelay
+version: 1.0.0
+main: dev.tarna.shielddelay.ShieldDelay
+description: A plugin to modify shield delay
+author: Tarna
+website: https://tarna.dev
+api-version: '1.20'
+
+commands:
+    shielddelay:
+        description: Set the delay of a shield
+        usage: /shielddelay <reload|set|get> [delay]
+        permission: shielddelay.use
+        permission-message: You do not have permission to use this command
