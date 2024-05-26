@@ -9,6 +9,7 @@ class ShieldListener(private val plugin: ShieldDelay) : Listener {
     @EventHandler
     fun onShieldDisable(event: PlayerShieldDisableEvent) {
         val delay = plugin.config.getInt("shield-delay")
+        if (delay < 0) return
         event.cooldown = delay
     }
 }

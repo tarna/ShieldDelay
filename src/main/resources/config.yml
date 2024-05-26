@@ -1,2 +1,3 @@
 # the delay in ticks of a shield's cooldown
-shield-delay: 10
+# a negative value will use the default cooldown
+shield-delay: -1
