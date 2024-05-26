@@ -14,9 +14,14 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
+    implementation("org.bstats:bstats-bukkit:3.0.2")
 }
 
 tasks {
+    shadowJar {
+        relocate("org.bstats", "dev.tarna.shielddelay.bstats")
+    }
+
     runServer {
         minecraftVersion("1.20.4")
     }
